@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+
+$font-family-sans-serif:'Lato', sans-serif;
+$primary:#007822;
+$navbar-nav-link-padding-x:1.3rem;
+$nav-link-font-size:1.1rem;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "node_modules/animate.css/animate.min.css";
+
+
+
+
+.nav-link.active{
+  color: white;
+  border-bottom: 2px solid $primary;
+}
+
+.brand-logo{
+  width: 8%;
+  transition: 0.3s;
+}
+
+
+.nav-site{
+  &:hover .brand-logo{
+    transform: rotate(360deg);
+  }
+
+}
+.home-img:hover{
+  transform: scale3d(1.2, 1.2, 1.2) rotate3d(6, -2, 4, 65deg);
+  box-shadow: black;
+
+  transition: 1s;
+}
+
+.card{
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border: none;
+}
+
+.footer-btn{
+  margin-top: 85px;
+}
+
+.footer-border{
+  border-bottom: 1px solid rgba(141, 139, 139, 0.95);
+
+}
+
+
